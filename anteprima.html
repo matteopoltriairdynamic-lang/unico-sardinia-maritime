@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anteprima, la sezione UNICO dentro una pagina</title>
+<style>
+:root{color-scheme:light}
+body{margin:0;background:#ffffff;color:#252525;font-family:'Noto Sans',system-ui,Arial,sans-serif;font-weight:400}
+.avviso{background:#f3f1ec;color:#6b6455;font-size:13px;letter-spacing:.6px;text-align:center;padding:10px 16px;border-bottom:1px solid #e4e0d6}
+.wrap{max-width:1048px;margin:0 auto;padding:0 20px}
+.finto{background:#f5f5f5;border:1px dashed #d8d8d8;color:#a3a3a3;font-size:13px;letter-spacing:1px;text-transform:uppercase;text-align:center;padding:64px 20px;margin:48px 0}
+.titolo-sezione{text-align:center;margin:72px 0 10px;font-size:30px;font-weight:400;color:#1c3a5e}
+.sottotitolo-sezione{text-align:center;margin:0 0 44px;font-size:15px;color:#777}
+iframe{width:100%;border:0;display:block;height:560px}
+</style>
+</head>
+<body>
+
+<div class="avviso">ANTEPRIMA. Simulazione di come si vedra la sezione UNICO dentro una pagina del sito. I riquadri grigi sono contenuto finto.</div>
+
+<div class="wrap">
+  <div class="finto">Intestazione e menu del sito</div>
+  <div class="finto">Contenuto esistente della pagina</div>
+
+  <h2 class="titolo-sezione">Partner</h2>
+  <p class="sottotitolo-sezione">Le realta con cui collaboriamo</p>
+</div>
+
+<iframe id="unico-frame" src="https://matteopoltriairdynamic-lang.github.io/unico-sardinia-maritime/" title="UNICO" scrolling="no" loading="lazy"></iframe>
+<script>
+window.addEventListener('message', function (e) {
+  if (e.data && e.data.unicoHeight) {
+    document.getElementById('unico-frame').style.height = e.data.unicoHeight + 'px';
+  }
+});
+</script>
+
+<div class="wrap">
+  <div class="finto">Altro contenuto della pagina</div>
+  <div class="finto">Pie di pagina del sito</div>
+</div>
+
+</body>
+</html>
