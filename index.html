@@ -64,6 +64,8 @@
 #unico-partner .u-cta{text-align:center}
 #unico-partner .u-box{max-width:594px;text-align:left}
 #unico-partner .u-intro{font-size:16.5px;line-height:1.7;color:#c9c4b8;margin:20px 0 0}
+#unico-partner .u-foto{margin:34px 0 0;padding:0}
+#unico-partner .u-foto img{display:block;width:100%;height:auto;max-width:100%}
 #unico-partner .u-field{margin-bottom:22px}
 #unico-partner .u-field > label{display:block;font-family:Inter,sans-serif;font-size:11px;font-weight:300;letter-spacing:.88px;color:#b7b2a4;text-transform:uppercase;margin-bottom:8px}
 #unico-partner input[type=text],#unico-partner input[type=email],#unico-partner input[type=tel],#unico-partner select,#unico-partner textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(216,211,198,.3);border-radius:0;color:#efe8d9;font-family:Inter,sans-serif;font-size:16px;font-weight:300;padding:10px 2px;outline:none;transition:border-color .2s}
@@ -115,6 +117,10 @@
     <p class="u-claim">Una persona. Una creazione. Mai replicata.</p>
 
     <p class="u-intro" id="unico-intro" hidden>Tutto inizia da una conversazione privata. Ogni richiesta viene esaminata personalmente e trattata con assoluta riservatezza.</p>
+
+    <figure class="u-foto" id="unico-foto" hidden>
+      <img src="https://matteopoltriairdynamic-lang.github.io/unico-sardinia-maritime/img/unico-indossato.jpg" alt="Un'opera UNICO indossata al collo" loading="lazy" width="1179" height="1558">
+    </figure>
 
     <div class="u-rule"></div>
 
@@ -223,11 +229,13 @@
 
   var wrap=document.getElementById('unico-wrap');
   var intro=document.getElementById('unico-intro');
+  var foto=document.getElementById('unico-foto');
   panel.hidden=true;
   trigger.hidden=false;
   trigger.addEventListener('click',function(){
     panel.hidden=false;
     intro.hidden=false;
+    if(foto){foto.hidden=false;}
     wrap.className='u-wrap is-open';
     trigger.hidden=true;
     trigger.setAttribute('aria-expanded','true');
