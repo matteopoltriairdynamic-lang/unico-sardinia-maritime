@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sezione UNICO per Molo66</title>
+</head>
+<body style="margin:0;background:#111111">
+
+<!--
+===========================================================================
+  SEZIONE UNICO  .  da inserire nella home di molo66.com
+  ---------------------------------------------------------------------
+  DOVE
+  Subito dopo il blocco "La nuova era della nautica" (90Nodi)
+  e prima del blocco "Inizia il viaggio con Molo66".
+
+  COME
+  Copiare tutto quello che sta fra i due marcatori
+  INIZIO BLOCCO DA COPIARE  e  FINE BLOCCO DA COPIARE.
+  Il CSS e' interamente circoscritto a #unico-molo66, non tocca nessuno
+  stile del sito. Il logo e' un SVG vettoriale incorporato, nessun file
+  esterno da caricare.
+
+  COMPORTAMENTO
+  Il modulo e' nascosto. Compare solo dopo il clic sul pulsante
+  "Richiedi una presentazione privata". Senza javascript il modulo
+  resta visibile, quindi funziona in ogni caso.
+
+  IL MODULO
+  Fondo, caratteri, colori, campi, etichette, opzioni e testi sono
+  ricalcati sul modulo ufficiale di unico-luxury.com. Invia tramite
+  Web3Forms, nessun server da predisporre. Va sostituita una sola cosa,
+  il valore di name="access_key". Il campo nascosto "origine" marca ogni
+  richiesta come proveniente da molo66.com.
+
+  PRIVACY
+  Nel testo sopra il pulsante c'e' un link href="#privacy".
+  Va puntato all'informativa privacy di Molo66.
+===========================================================================
+-->
+
+<!-- ============ INIZIO BLOCCO DA COPIARE ============ -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap');
+
+#unico-molo66{border-top:0;border-bottom:0;background:#111111;color:#d8d3c6;font-family:Inter,'Helvetica Neue',Arial,sans-serif;font-weight:300;padding:120px 40px;border-top:1px solid rgba(183,154,99,.28);border-bottom:1px solid rgba(183,154,99,.28);color-scheme:dark}
+#unico-molo66 *{box-sizing:border-box}
+#unico-molo66 [hidden]{display:none !important}
+#unico-molo66 .u-wrap{max-width:940px;margin:0 auto;text-align:center}
+#unico-molo66 .u-wrap.is-open{max-width:1160px;display:grid;grid-template-columns:minmax(0,486px) minmax(0,594px);gap:80px;align-items:start;text-align:left}
+#unico-molo66 .u-wrap.is-open .u-logo{margin-left:0;margin-right:0}
+#unico-molo66 .u-wrap.is-open .u-rule{display:none}
+#unico-molo66 .u-eyebrow{font-family:Inter,sans-serif;font-size:11px;font-weight:500;letter-spacing:2.64px;color:#b79a63;text-transform:uppercase;margin:0 0 34px}
+#unico-molo66 .u-logo{width:230px;height:auto;color:#efe8d9;display:block;margin:0 auto 28px}
+#unico-molo66 .u-title{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:26px;line-height:1.5;letter-spacing:.7px;color:#efe8d9;margin:0;white-space:nowrap}
+#unico-molo66 .u-rule{width:52px;height:1px;background:#b79a63;margin:44px auto}
+#unico-molo66 .u-cta{text-align:center}
+#unico-molo66 .u-box{max-width:594px;text-align:left}
+#unico-molo66 .u-intro{font-size:16.5px;line-height:1.7;color:#c9c4b8;margin:20px 0 0}
+#unico-molo66 .u-field{margin-bottom:22px}
+#unico-molo66 .u-field > label{display:block;font-family:Inter,sans-serif;font-size:11px;font-weight:300;letter-spacing:.88px;color:#b7b2a4;text-transform:uppercase;margin-bottom:8px}
+#unico-molo66 input[type=text],#unico-molo66 input[type=email],#unico-molo66 input[type=tel],#unico-molo66 select,#unico-molo66 textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(216,211,198,.3);border-radius:0;color:#efe8d9;font-family:Inter,sans-serif;font-size:16px;font-weight:300;padding:10px 2px;outline:none;transition:border-color .2s}
+#unico-molo66 input:focus,#unico-molo66 select:focus,#unico-molo66 textarea:focus{border-bottom-color:#b79a63}
+#unico-molo66 select option{background:#111111;color:#efe8d9}
+#unico-molo66 textarea{resize:vertical;line-height:1.6}
+#unico-molo66 .u-radio-row{display:flex;flex-direction:row;flex-wrap:wrap;gap:26px;margin-top:4px}
+#unico-molo66 .u-radio-row label{display:flex;align-items:center;gap:8px;font-size:14px;color:#efe8d9;cursor:pointer}
+#unico-molo66 .u-radio-row input{width:13px;height:13px;accent-color:#b79a63}
+#unico-molo66 .u-check-row{display:flex;align-items:flex-start;gap:10px;font-size:12.5px;line-height:1.6;color:#b7b2a4;text-transform:none;letter-spacing:normal;margin:26px 0;cursor:pointer}
+#unico-molo66 .u-check-row input{width:14px;height:14px;flex:0 0 auto;margin-top:3px;accent-color:#b79a63}
+#unico-molo66 .u-check-row a{color:#b79a63}
+#unico-molo66 .u-btn{display:inline-block;background:#b79a63;color:#111111;border:0;border-radius:0;font-family:Inter,sans-serif;font-size:11.5px;font-weight:500;letter-spacing:1.61px;text-transform:uppercase;padding:16px 34px;cursor:pointer;transition:background .2s}
+#unico-molo66 .u-btn:hover{background:#c9a86f}
+#unico-molo66 .u-btn[disabled]{opacity:.55;cursor:default}
+#unico-molo66 .u-foot{font-size:12px;line-height:1.7;color:#8a7248;margin:16px 0 0}
+#unico-molo66 .u-status{margin:16px 0 0;font-size:14px;line-height:1.7;min-height:22px}
+#unico-molo66 .u-ok{color:#b79a63}
+#unico-molo66 .u-err{color:#c98d7a}
+#unico-molo66 .u-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media (max-width:1140px){
+  #unico-molo66 .u-wrap.is-open{grid-template-columns:1fr;gap:44px;max-width:594px}
+}
+@media (max-width:640px){
+  #unico-molo66{padding:80px 22px}
+  #unico-molo66 .u-title{font-size:19px;letter-spacing:.4px;white-space:normal}
+  #unico-molo66 .u-logo{width:180px}
+  #unico-molo66 .u-btn{width:100%}
+  #unico-molo66 .u-radio-row{gap:14px}
+}
+</style>
+
+<section id="unico-molo66">
+  <div class="u-wrap" id="unico-wrap">
+   <div class="u-head">
+
+
+    <svg class="u-logo" role="img" aria-label="UNICO" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1080 467.234">
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 541.324219 48.757812 C 541.105469 48.578125 540.777344 48.730469 540.777344 49.015625 L 540.777344 314.839844 L 539.726562 60.019531 C 539.726562 59.875 539.664062 59.742188 539.554688 59.65625 L 533.851562 54.707031 C 533.632812 54.53125 533.304688 54.683594 533.304688 54.96875 L 534.671875 385.828125 C 534.671875 385.894531 534.699219 385.957031 534.746094 386.003906 L 540.683594 391.5625 C 540.710938 391.585938 540.746094 391.597656 540.777344 391.605469 L 540.777344 411.992188 C 540.777344 412.058594 540.804688 412.121094 540.851562 412.164062 L 546.789062 417.722656 C 546.945312 417.867188 547.199219 417.757812 547.199219 417.542969 L 547.199219 54.066406 C 547.199219 53.925781 547.136719 53.789062 547.027344 53.703125 Z M 541.324219 48.757812 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 555.5 93.597656 L 549.792969 88.652344 C 549.578125 88.476562 549.25 88.628906 549.25 88.910156 L 549.25 365.644531 C 549.25 365.710938 549.277344 365.773438 549.324219 365.816406 L 555.261719 371.375 C 555.417969 371.519531 555.671875 371.410156 555.671875 371.195312 L 555.671875 93.960938 C 555.671875 93.820312 555.605469 93.6875 555.5 93.597656 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 600.519531 280.191406 C 602.378906 282.875 604.300781 285.515625 606.410156 288.003906 C 610.566406 293.019531 615.019531 297.792969 619.90625 302.101562 C 621.09375 303.210938 622.367188 304.230469 623.59375 305.300781 L 625.449219 306.890625 L 627.386719 308.378906 L 631.273438 311.34375 C 632.628906 312.246094 633.96875 313.171875 635.304688 314.113281 C 637.933594 316.058594 640.808594 317.617188 643.570312 319.367188 C 646.355469 321.074219 649.296875 322.519531 652.132812 324.1875 C 650.628906 323.53125 649.128906 322.863281 647.636719 322.175781 C 646.15625 321.46875 644.613281 320.878906 643.179688 320.070312 C 640.320312 318.453125 637.351562 317.003906 634.617188 315.167969 C 633.222656 314.292969 631.828125 313.410156 630.457031 312.5 L 626.480469 309.5625 L 624.496094 308.085938 L 622.59375 306.507812 C 621.335938 305.441406 620.027344 304.429688 618.808594 303.316406 C 613.953125 298.855469 609.417969 294.027344 605.425781 288.78125 C 601.460938 283.523438 597.875 277.925781 595.40625 271.828125 C 596.929688 274.734375 598.664062 277.507812 600.519531 280.191406 M 630.976562 129.582031 C 649.894531 114.742188 674.128906 105.824219 700.554688 105.824219 C 742.21875 105.824219 778.441406 127.988281 796.953125 160.605469 L 796.953125 154.027344 C 796.796875 153.789062 796.648438 153.542969 796.492188 153.304688 L 794.871094 150.835938 L 793.121094 148.453125 C 791.996094 146.835938 790.707031 145.34375 789.457031 143.828125 C 784.390625 137.804688 778.699219 132.332031 772.554688 127.417969 L 767.878906 123.816406 C 766.347656 122.574219 764.640625 121.582031 763.03125 120.449219 C 761.375 119.382812 742.808594 108.429688 731.617188 103.972656 C 733.28125 104.371094 734.632812 104.855469 734.59375 104.835938 C 748.308594 109.554688 754.75 113.179688 756.46875 114.183594 C 759.519531 115.835938 762.554688 117.519531 765.457031 119.417969 L 765.457031 116.703125 C 746.324219 103.808594 723.289062 96.269531 698.480469 96.269531 C 632.152344 96.269531 578.378906 150.039062 578.378906 216.367188 C 578.378906 282.699219 632.152344 336.46875 698.480469 336.46875 C 739.242188 336.46875 775.238281 316.140625 796.953125 285.089844 L 796.953125 261.570312 C 793.21875 269.339844 788.535156 276.601562 783.003906 283.203125 C 763.074219 309.835938 731.277344 327.074219 695.453125 327.074219 C 635.101562 327.074219 586.175781 278.148438 586.175781 217.796875 C 586.175781 181.5625 603.820312 149.460938 630.976562 129.582031 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 448.03125 108.375 C 454.132812 110.84375 459.730469 114.429688 464.984375 118.394531 C 470.230469 122.386719 475.058594 126.921875 479.523438 131.777344 C 480.636719 132.996094 481.644531 134.300781 482.710938 135.558594 L 484.289062 137.464844 L 485.765625 139.449219 L 488.703125 143.425781 C 489.613281 144.796875 490.5 146.1875 491.375 147.585938 C 493.207031 150.320312 494.65625 153.292969 496.273438 156.148438 C 497.082031 157.582031 497.671875 159.125 498.382812 160.605469 C 499.070312 162.097656 499.738281 163.597656 500.390625 165.097656 C 498.726562 162.265625 497.28125 159.328125 495.570312 156.539062 C 493.820312 153.777344 492.261719 150.898438 490.316406 148.273438 C 489.378906 146.9375 488.453125 145.597656 487.546875 144.242188 L 484.582031 140.355469 L 483.09375 138.417969 L 481.507812 136.5625 C 480.4375 135.335938 479.417969 134.0625 478.304688 132.875 C 474 127.988281 469.222656 123.535156 464.207031 119.378906 C 461.722656 117.265625 459.082031 115.347656 456.398438 113.488281 C 453.714844 111.628906 450.9375 109.898438 448.03125 108.375 M 394 99.144531 C 454.355469 99.144531 503.28125 148.070312 503.28125 208.421875 C 503.28125 244.246094 486.042969 276.042969 459.410156 295.972656 C 452.808594 301.503906 445.542969 306.1875 437.777344 309.917969 L 461.296875 309.917969 C 492.347656 288.207031 512.675781 252.210938 512.675781 211.449219 C 512.675781 145.121094 458.902344 91.347656 392.574219 91.347656 C 326.242188 91.347656 272.472656 145.121094 272.472656 211.449219 C 272.472656 236.257812 280.011719 259.292969 292.90625 278.425781 L 295.625 278.425781 C 293.726562 275.519531 292.039062 272.484375 290.386719 269.4375 C 289.386719 267.71875 285.761719 261.277344 281.039062 247.5625 C 281.058594 247.601562 280.574219 246.25 280.175781 244.582031 C 284.632812 255.78125 295.589844 274.34375 296.65625 276 C 297.785156 277.609375 298.78125 279.316406 300.019531 280.847656 L 303.621094 285.523438 C 308.535156 291.664062 314.007812 297.359375 320.03125 302.425781 C 321.550781 303.675781 323.042969 304.960938 324.65625 306.09375 L 327.039062 307.839844 L 329.507812 309.460938 C 329.746094 309.617188 329.992188 309.765625 330.234375 309.917969 L 336.808594 309.917969 C 304.191406 291.410156 282.03125 255.183594 282.03125 213.523438 C 282.03125 187.097656 290.945312 162.863281 305.785156 143.945312 C 325.667969 116.789062 357.765625 99.144531 394 99.144531 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 86.257812 314.988281 C 74.171875 309.699219 63 302.292969 53.375 293.234375 C 48.554688 288.710938 44.234375 283.671875 40.332031 278.347656 C 36.375 273.058594 33.003906 267.347656 30.0625 261.449219 L 27.960938 256.972656 C 27.230469 255.492188 26.707031 253.925781 26.070312 252.40625 C 25.484375 250.867188 24.796875 249.367188 24.292969 247.800781 L 22.738281 243.113281 C 22.492188 242.328125 22.222656 241.550781 21.992188 240.761719 L 21.367188 238.375 L 20.121094 233.601562 C 19.363281 230.40625 18.800781 227.164062 18.15625 223.949219 C 20.988281 236.765625 25.21875 249.261719 31.1875 260.878906 C 34.273438 266.625 37.5625 272.28125 41.535156 277.460938 C 45.421875 282.6875 49.722656 287.617188 54.503906 292.046875 C 59.21875 296.539062 64.308594 300.644531 69.714844 304.289062 C 75.121094 307.941406 80.875 311.054688 86.777344 313.84375 C 92.691406 316.613281 98.832031 318.910156 105.113281 320.734375 C 111.378906 322.609375 117.800781 324.03125 124.320312 324.785156 C 111.210938 323.835938 98.328125 320.265625 86.257812 314.988281 M 224.726562 127.523438 L 220.953125 127.523438 C 214.808594 119.984375 203.03125 111.726562 198.558594 108.722656 L 190.652344 108.722656 C 223.273438 127.234375 245.433594 163.457031 245.433594 205.121094 C 245.433594 231.542969 236.519531 255.777344 221.675781 274.695312 C 201.792969 301.851562 169.699219 319.5 133.460938 319.5 C 73.109375 319.5 24.183594 270.574219 24.183594 210.21875 C 24.183594 174.394531 41.421875 142.597656 68.054688 122.667969 C 74.65625 117.136719 81.921875 112.457031 89.6875 108.722656 L 66.167969 108.722656 C 35.117188 130.433594 14.789062 166.429688 14.789062 207.191406 C 14.789062 273.523438 68.558594 327.292969 134.890625 327.292969 C 201.21875 327.292969 254.992188 273.523438 254.992188 207.191406 C 254.992188 176.613281 243.550781 148.71875 224.726562 127.523438 "/>
+<path fill-rule="nonzero" fill="currentColor" fill-opacity="1" d="M 1010.246094 306.84375 C 991.160156 322.902344 966.597656 332.574219 939.785156 332.574219 C 879.019531 332.574219 829.757812 282.9375 829.757812 221.710938 C 829.757812 184.777344 847.699219 152.085938 875.257812 131.9375 C 894.347656 115.878906 918.910156 106.207031 945.71875 106.207031 C 1006.488281 106.207031 1055.75 155.84375 1055.75 217.070312 C 1055.75 254.003906 1037.808594 286.695312 1010.246094 306.84375 M 970.34375 102.613281 C 978.183594 104.277344 985.859375 106.753906 993.242188 109.933594 C 1000.613281 113.140625 1007.644531 117.148438 1014.195312 121.832031 C 1027.230469 131.304688 1038.011719 143.808594 1045.667969 157.886719 C 1053.371094 171.972656 1058.28125 187.386719 1060.941406 203.046875 C 1057.09375 187.632812 1051.457031 172.699219 1043.554688 159.089844 C 1042.640625 157.347656 1041.507812 155.738281 1040.425781 154.097656 C 1039.316406 152.480469 1038.34375 150.765625 1037.128906 149.222656 L 1033.5625 144.542969 C 1032.382812 142.976562 1031 141.578125 1029.730469 140.089844 C 1024.5 134.273438 1018.777344 128.855469 1012.363281 124.351562 C 999.691406 115.148438 985.070312 108.738281 969.796875 104.972656 C 962.152344 103.09375 954.34375 101.832031 946.472656 101.140625 C 938.601562 100.394531 930.65625 100.3125 922.738281 100.917969 C 938.464844 98.535156 954.6875 99.277344 970.34375 102.613281 M 944 96.265625 C 877.054688 96.265625 822.789062 150.535156 822.789062 217.476562 C 822.789062 284.421875 877.054688 338.6875 944 338.6875 C 1010.941406 338.6875 1065.210938 284.421875 1065.210938 217.476562 C 1065.210938 150.535156 1010.941406 96.265625 944 96.265625 "/>
+</svg>
+
+    <h2 class="u-title">Maison italiana di alta gioielleria</h2>
+
+    <p class="u-intro" id="unico-intro" hidden>Tutto inizia da una conversazione privata. Ogni richiesta viene esaminata personalmente e trattata con assoluta riservatezza.</p>
+
+    <div class="u-rule"></div>
+
+    <div class="u-cta">
+      <button class="u-btn" type="button" id="unico-trigger" aria-controls="unico-panel" aria-expanded="false" hidden>Richiedi una presentazione privata</button>
+    </div>
+
+   </div>
+
+    <div id="unico-panel">
+      <div class="u-box">
+
+        <form id="unico-form">
+          <input type="hidden" name="access_key" value="INSERIRE_QUI_LA_ACCESS_KEY">
+          <input type="hidden" name="subject" value="Richiesta UNICO dal sito Molo66">
+          <input type="hidden" name="from_name" value="Sito Molo66">
+          <input type="hidden" name="origine" value="molo66.com">
+
+          <div class="u-field">
+            <label for="u-nome">Nome e cognome</label>
+            <input id="u-nome" type="text" name="nome_cognome" required autocomplete="name">
+          </div>
+
+          <div class="u-field">
+            <label for="u-mail">Email</label>
+            <input id="u-mail" type="email" name="email" required autocomplete="email">
+          </div>
+
+          <div class="u-field">
+            <label for="u-paese">Paese</label>
+            <select id="u-paese" name="paese">
+              <option value="">Seleziona</option>
+              <option value="Italia">Italia</option>
+              <option value="Monaco">Monaco</option>
+              <option value="Francia">Francia</option>
+              <option value="Emirati Arabi Uniti">Emirati Arabi Uniti</option>
+              <option value="Regno Unito">Regno Unito</option>
+              <option value="Stati Uniti">Stati Uniti</option>
+              <option value="Svizzera">Svizzera</option>
+              <option value="Altro">Altro</option>
+            </select>
+          </div>
+
+          <div class="u-field">
+            <label for="u-tel">Telefono / WhatsApp</label>
+            <input id="u-tel" type="tel" name="telefono" placeholder="+39" autocomplete="tel">
+          </div>
+
+          <div class="u-field">
+            <label>Modalit&agrave; preferita</label>
+            <div class="u-radio-row">
+              <label><input type="radio" name="modalita" value="Montecarlo"> Montecarlo</label>
+              <label><input type="radio" name="modalita" value="Presso di me"> Presso di me</label>
+              <label><input type="radio" name="modalita" value="Video-consultazione"> Video-consultazione</label>
+            </div>
+          </div>
+
+          <div class="u-field">
+            <label for="u-come">Come hai conosciuto UNICO?</label>
+            <select id="u-come" name="come_conosciuto">
+              <option value="">Seleziona</option>
+              <option value="Partner">Partner</option>
+              <option value="LinkedIn">LinkedIn</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Stampa">Stampa</option>
+              <option value="Altro">Altro</option>
+            </select>
+          </div>
+
+          <div class="u-field">
+            <label for="u-msg">Che cosa ti ha colpito di UNICO? (facoltativo)</label>
+            <textarea id="u-msg" name="messaggio" rows="4"></textarea>
+          </div>
+
+          <label class="u-check-row" for="u-priv">
+            <input id="u-priv" type="checkbox" required>
+            <span>Ho letto e accetto la <a href="#privacy" target="_blank" rel="noopener">Privacy Policy</a>.</span>
+          </label>
+
+          <div class="u-hp" aria-hidden="true">
+            <label for="u-web">Sito web</label>
+            <input id="u-web" type="text" name="botcheck" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button class="u-btn" type="submit">Richiedi una presentazione privata</button>
+          <p class="u-status" id="unico-status" role="status" aria-live="polite"></p>
+          <p class="u-foot">Nessun calendario pubblico. Il team ti contatter&agrave; personalmente per definire data e modalit&agrave;.</p>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function(){
+  var f=document.getElementById('unico-form');
+  if(!f) return;
+  var s=document.getElementById('unico-status');
+  var b=f.querySelector('button[type=submit]');
+  var panel=document.getElementById('unico-panel');
+  var trigger=document.getElementById('unico-trigger');
+  var rule=document.querySelector('#unico-molo66 .u-rule');
+
+  var wrap=document.getElementById('unico-wrap');
+  var intro=document.getElementById('unico-intro');
+  panel.hidden=true;
+  trigger.hidden=false;
+  trigger.addEventListener('click',function(){
+    panel.hidden=false;
+    intro.hidden=false;
+    wrap.className='u-wrap is-open';
+    trigger.hidden=true;
+    trigger.setAttribute('aria-expanded','true');
+    var first=f.querySelector('input[name=nome_cognome]');
+    if(first){first.focus();}
+    panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    s.className='u-status';
+    s.textContent='Invio in corso.';
+    b.disabled=true;
+    var d={};
+    new FormData(f).forEach(function(v,k){d[k]=v});
+    d.pagina=window.location.href;
+    fetch('https://api.web3forms.com/submit',{
+      method:'POST',
+      headers:{'Content-Type':'application/json',Accept:'application/json'},
+      body:JSON.stringify(d)
+    }).then(function(r){return r.json()}).then(function(j){
+      if(j.success){
+        s.className='u-status u-ok';
+        s.textContent='Richiesta inviata. Verrai ricontattato personalmente e in forma riservata.';
+        f.reset();
+      }else{
+        s.className='u-status u-err';
+        s.textContent='Invio non riuscito. Scrivi a matteo.poltri@unico-luxury.com';
+        b.disabled=false;
+      }
+    }).catch(function(){
+      s.className='u-status u-err';
+      s.textContent='Invio non riuscito. Scrivi a matteo.poltri@unico-luxury.com';
+      b.disabled=false;
+    });
+  });
+})();
+</script>
+
+<!-- ============ FINE BLOCCO DA COPIARE ============ -->
+
+
+<script>
+(function(){
+  function post(){
+    try{parent.postMessage({unicoHeight:document.documentElement.scrollHeight},'*');}catch(e){}
+  }
+  if(window.ResizeObserver){new ResizeObserver(post).observe(document.documentElement);}
+  window.addEventListener('load',post);
+  window.addEventListener('resize',post);
+  setTimeout(post,300);
+  setTimeout(post,1200);
+})();
+</script>
+</body>
+</html>
