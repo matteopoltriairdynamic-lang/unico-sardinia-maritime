@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sezione UNICO per Sardinia Maritime</title>
 </head>
-<body style="margin:0;background:#111111">
+<body style="margin:0;background:transparent">
 
 <!--
 ===========================================================================
@@ -45,7 +45,8 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap');
 
-#unico-partner{border-top:0;border-bottom:0;background:#111111;color:#d8d3c6;font-family:Inter,'Helvetica Neue',Arial,sans-serif;font-weight:300;padding:120px 40px;border-top:1px solid rgba(183,154,99,.28);border-bottom:1px solid rgba(183,154,99,.28);color-scheme:dark}
+#unico-partner{border-top:0;border-bottom:0;background:#111111;color:#d8d3c6;font-family:Inter,'Helvetica Neue',Arial,sans-serif;font-weight:300;padding:72px 40px;border-top:1px solid rgba(183,154,99,.28);border-bottom:1px solid rgba(183,154,99,.28);color-scheme:dark}
+#unico-partner.is-open{padding:120px 40px}
 #unico-partner *{box-sizing:border-box}
 #unico-partner [hidden]{display:none !important}
 #unico-partner .u-wrap{max-width:1048px;margin:0 auto;text-align:center}
@@ -86,11 +87,26 @@
 #unico-partner .u-ok{color:#b79a63}
 #unico-partner .u-err{color:#c98d7a}
 #unico-partner .u-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+#unico-partner .u-cover-foto{margin:0;padding:0}
+#unico-partner .u-cover-foto img{display:block;width:100%;height:auto}
+#unico-partner .u-wrap:not(.is-open){display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:64px;align-items:center;text-align:left}
+#unico-partner .u-wrap:not(.is-open) .u-logo{margin-left:0;margin-right:0}
+#unico-partner .u-wrap:not(.is-open) .u-rule{margin-left:0;margin-right:0}
+#unico-partner .u-wrap:not(.is-open) .u-cta{text-align:left}
+#unico-partner .u-wrap.is-open .u-cover-foto{display:none}
+@media (max-width:1040px){
+  #unico-partner .u-wrap:not(.is-open){grid-template-columns:1fr;gap:40px;max-width:594px;text-align:center}
+  #unico-partner .u-wrap:not(.is-open) .u-logo{margin-left:auto;margin-right:auto}
+  #unico-partner .u-wrap:not(.is-open) .u-rule{margin-left:auto;margin-right:auto}
+  #unico-partner .u-wrap:not(.is-open) .u-cta{text-align:center}
+  #unico-partner .u-cover-foto{max-width:360px;margin:0 auto}
+}
 @media (max-width:1040px){
   #unico-partner .u-wrap.is-open{grid-template-columns:1fr;gap:44px;max-width:594px}
 }
 @media (max-width:640px){
-  #unico-partner{padding:80px 22px}
+  #unico-partner{padding:56px 22px}
+  #unico-partner.is-open{padding:80px 22px}
   #unico-partner .u-title{font-size:19px;letter-spacing:.4px;white-space:normal}
   #unico-partner .u-logo{width:180px}
   #unico-partner .u-btn{width:100%}
@@ -100,6 +116,9 @@
 
 <section id="unico-partner">
   <div class="u-wrap" id="unico-wrap">
+   <figure class="u-cover-foto" id="unico-cover-foto">
+     <img src="https://matteopoltriairdynamic-lang.github.io/unico-sardinia-maritime/img/unico-indossato.jpg" alt="Un'opera UNICO indossata al collo" loading="lazy" width="1179" height="1558">
+   </figure>
    <div class="u-head">
 
 
@@ -228,6 +247,7 @@
   var rule=document.querySelector('#unico-partner .u-rule');
 
   var wrap=document.getElementById('unico-wrap');
+  var sez=document.getElementById('unico-partner');
   var intro=document.getElementById('unico-intro');
   var foto=document.getElementById('unico-foto');
   panel.hidden=true;
@@ -237,6 +257,7 @@
     intro.hidden=false;
     if(foto){foto.hidden=false;}
     wrap.className='u-wrap is-open';
+    if(sez){sez.classList.add('is-open');}
     trigger.hidden=true;
     trigger.setAttribute('aria-expanded','true');
     var first=f.querySelector('input[name=nome_cognome]');
